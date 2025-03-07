@@ -8,4 +8,9 @@ def index(request):
 
 def metodoviernes(request):
     
-    return HttpResponse("Hoy es viernes!!")
+    return render(request, 'aplicacion/viernes.html')
+    #return HttpResponse("Hoy es viernes!!")
+
+def metodolistas(request):
+    return render(request, 'aplicacion/listas.html')
+    #return HttpResponse("Listas en Django!!")
