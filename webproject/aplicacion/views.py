@@ -3,4 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Mi primeroa Pagina Web con Django!!")
+    return render(request, 'aplicacion/index.html')
+    #return HttpResponse("Mi primera Pagina Web con Django!!")
+
+def metodoviernes(request):
+    
+    return HttpResponse("Hoy es viernes!!")
