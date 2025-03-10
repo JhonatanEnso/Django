@@ -13,5 +13,8 @@ def futbol(request):
     data = {
         "equipo": nombre
     }
-    return render(request, 'informacion/futbol.html', data) 
+    return render(request, 'informacion/futbol.html', data)
+
+def jugadores(request):
+    return render(request, 'informacion/jugadores.html') 
     #return HttpResponse("Mi primera pagina Django!!!")
