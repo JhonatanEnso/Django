@@ -13,4 +13,7 @@ def metodoviernes(request):
 
 def metodolistas(request):
     return render(request, 'aplicacion/listas.html')
+
+def metodopeliculas(request):
+    return render(request, 'aplicacion/peliculas.html')
     #return HttpResponse("Listas en Django!!")

@@ -1,17 +1,26 @@
+{% load static %} <!--nunca olbidar colocar esto para que carge la imagen guardada en la carpeta static-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
-    <link rel="stylesheet" href="{% static 'aplicacion/css/styles.css' %}">
+    
 </head>
 <body>
-    <a href="/app/">Volver a Home</a>
+    <a href="/app/">Home</a>
     <header>
-        <h1>PAGINA DE LISTAS</h1>
-        <h3> PRESENTANDO LISTAS</h3>
+        <h1 style="color: blue;">PAGINA DE LISTAS</h1>
+        <h3 style="color: blueviolet;"> PRESENTANDO LISTAS</h3>
+        
         <ul>
+            <style>
+                li {
+                    color: red;
+                }
+            </style>
+            <img src="{% static 'images/dibujo2.jpg' %}" width="300" height="200">
+            <br><br>
             <li>CAFE</li>
             <li>Te</li>
             <li>LECHE</li>

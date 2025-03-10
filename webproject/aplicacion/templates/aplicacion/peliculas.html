@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: yellowgreen;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+        .verde {
+            background-color: lightgreen;
+        }
+    </style>
+    <script>
+        function cambiar(imagen){
+            imagen.src = "{% static 'images/dibujo3.jpg' %}";
+            
+        }
+    </script>
+</head>
+<body>
+    <a class="verde" href="/app/">Home</a>
+    <br>
+    <h1>Bienvenido a la pagina de Peliculas</h1>
+    <br>
+    <img onmo                                                                                                                                                                                       useover="cambiar(this)" src="{% static 'images/dibujo.jpg' %}">
+    <br> <br>
+    
+</body>
+</html>
